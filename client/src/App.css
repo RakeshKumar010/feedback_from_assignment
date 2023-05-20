@@ -3,8 +3,12 @@
   align-items: center;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom right, #6889FF,#c668FF );
   padding: 1rem;
+  
+}
+.app_main{
+  background: linear-gradient(to bottom right, #6889FF,#c668FF );
+
 }
 .form{
   width: 50%;
@@ -12,6 +16,7 @@
   box-shadow: 0 0 8px black;
   flex-direction: column;
   padding: 2vw;
+  border-radius: 10px;
 
 }
 .form_div{
@@ -38,6 +43,8 @@
 .dubble_column_input{
   width: 100%;
   padding: 7px;
+  border-radius: 10px;
+
 }
 .btn_or_details_div{
   display: flex;
@@ -46,12 +53,24 @@
 }
 .btn_or_details_div_btn{
   padding: 10px;
+  border-radius: 10px;
+  border: 0;
+  height: 5vh;
+
 }
 .form_div input{
   padding: 5px;
+  border-radius: 10px;
+  border: 0;
+
+}
+.form_div textarea{
+  border-radius: 10px;
+  border: 0;
+
 }
 .image{
-  filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(0 0 8px);
 }
 .image_side{
   display: flex;
@@ -66,4 +85,31 @@
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 8px black ;
+}
+.image_side p,.back{
+  color: white;
+  text-shadow: 1px 1px 8px black;
+  /* background-color: rgba(100, 100, 255, 0.253); */
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px black ;
+  background-color: #c668FF;
+  font-size: small;
+}
+.image_side p:hover,.back:hover{
+  cursor: pointer;
+  background-color: greenyellow;
+}
+@media screen and (max-width: 915px) {
+  .form_main{
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+
+  }
+  .form{
+    width: 100%;
+  }
+  .image{
+    display: none;
+  }
 }
