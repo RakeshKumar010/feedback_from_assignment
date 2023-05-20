@@ -6,7 +6,7 @@ const AllData = () => {
     const [data, setData] = useState()
     useEffect(() => {
         async function getFun() {
-            let result = await fetch('http://localhost:8080/alldata', {
+            let result = await fetch('https://feedback-from-assignment.onrender.com/alldata', {
                 method: "get",
                 headers: { 'content-type': 'application/json' },
             })
